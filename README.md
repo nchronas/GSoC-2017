@@ -57,7 +57,9 @@ The code generation project uses python 2.7 and the jinja2 templating engine. Ji
 
 ## Running the examples
 
-![alt_text](arty.gif)
+![alt_text](arty_term.gif)
+
+*Arty example program*
 
 After preparing the environment, the next steps are required to run the examples.
 
@@ -105,7 +107,7 @@ After preparing the environment, the next steps are required to run the examples
 
 A note for vivado and Arty: programming the FPGA in the virtual machine was sometimes unstable. When there was an issue I simply restarted the virtual machine.
 
-![alt_text](arty_term.gif)
+![alt_text](arty.gif)
 
 # Minion SoC
 
@@ -537,45 +539,18 @@ One of the key metrics of any protection techniques, is the changes in resources
 
 The other critical factor for use in cubesats are the power dissipation. The added 8mW is not an issue. Also the general power dissipation makes it usable for 2U cubesat, as In [UPSat](https://upsat.gr/) the onboard computer used 0.198W.
 
-<center>
-<table>
-  <tr>
-    <td>![alt_text](cls_graph.png)</td>
-    <td>![alt_text](cls_util.png)</td>
-  </tr>
-  <tr>
-    <td>(a)</td>
-    <td>(b)</td>
-  </tr>
-  <tr>
-    <td>![alt_text](graph.png)</td>
-    <td>![alt_text](util.png)</td>
-  </tr>
-  <tr>
-    <td>(c)</td>
-    <td>(d)</td>
-  </tr>
-</table>
-</center>
-*Resource utilization in: with CLS (a,b), without (c,d)*
+![alt_text](cls_graph.png) ![alt_text](cls_util.png) |
+![alt_text](graph.png) ![alt_text](util.png)
 
-<center>
-<table>
-  <tr>
-    <td>![alt_text](cls_pwr.png)</td>
-    <td>![alt_text](cls_pwr_el.png)</td>
-  </tr>
-  <td>(a)</td>
-  <td>(b)</td>
-  <tr>
-    <td>![alt_text](pwr.png)</td>
-    <td>![alt_text](pwr_graph.png)</td>
-  </tr>
-  <td>(c)</td>
-  <td>(d)</td>
-</table>
-</center>
-*Power usage: with CLS (a,b), without (c,d)*
+*Resource utilization with CLS and without*
+
+![alt_text](cls_pwr.png) ![alt_text](cls_pwr_el.png)
+![alt_text](pwr.png) ![alt_text](pwr_graph.png)
+
+*Power usage: with CLS and without*
+
+
+
 
 # Thoughts and future work
 
