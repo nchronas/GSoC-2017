@@ -57,6 +57,8 @@ The code generation project uses python 2.7 and the jinja2 templating engine. Ji
 
 ## Running the examples
 
+![alt_text](arty.gif)
+
 After preparing the environment, the next steps are required to run the examples.
 
 1. First we must select the correct code. Go the minion\_subsystem folder and switch to the core-lockstep-codegen branch using `git checkout core-lockstep-codegen`
@@ -103,10 +105,7 @@ After preparing the environment, the next steps are required to run the examples
 
 A note for vivado and Arty: programming the FPGA in the virtual machine was sometimes unstable. When there was an issue I simply restarted the virtual machine.
 
-![alt_text](arty.gif)
-
 ![alt_text](arty_term.gif)
-*Arty example program*
 
 # Minion SoC
 
